@@ -5,6 +5,7 @@ import "./style.css";
 function SolAirdrop() {
   const [solanaPublicKey, setSolanaPublicKey] = useState("");
   const [txHash, setTxHash] = useState("");
+  const [isAirdropped, setIsAirdropped] = useState(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ function SolAirdrop() {
     // 1e9 lamports = 10^9 lamports = 1 SOL
     let txhash = await connection.requestAirdrop(publicKeyObject, 1e9);
     setTxHash(txhash);
+    setIsAirdropped(true);
   };
 
   // Move console.log statement outside of JSX block
@@ -39,6 +41,7 @@ function SolAirdrop() {
           id="search"
           value={solanaPublicKey}
           onChange={(e) => setSolanaPublicKey(e.target.value)}
+          className={isAirdropped ? "airdropped" : ""}
         />
         <button type="submit">Airdrop</button>
       </form>
