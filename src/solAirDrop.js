@@ -22,7 +22,10 @@ function SolAirdrop() {
   return (
     <div className="container">
       <form onSubmit={onSubmit}>
-        <label htmlFor="search">Enter Sol Token</label>
+        <label htmlFor="search">Solana Airdrop to Devnet</label>
+        <p className="warning">
+          <b>This tool does *NOT* give real $SOL or Solana tokens.</b>
+        </p>
         <input
           type="text"
           name="search"
