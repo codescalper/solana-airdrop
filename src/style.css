@@ -74,4 +74,13 @@
     background-color: #101d30;
     transition: all 0.5s ease-in-out;
   }
-  
+  .footer-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin-top: 60%;
+  }
+    

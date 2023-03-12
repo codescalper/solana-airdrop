@@ -45,6 +45,8 @@ function SolAirdrop() {
         />
         <button type="submit">Airdrop</button>
       </form>
+      <div className="footer-text">Made by Mayank</div>
+     
     </div>
   );
 }
