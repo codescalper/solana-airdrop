@@ -10,9 +10,15 @@ function SolAirdrop() {
     e.preventDefault();
     // connection
     const connection = new Connection("https://api.devnet.solana.com");
-    let PublicKeyObject = new PublicKey(solanaPublicKey);
+    let publicKeyObject;
+    try {
+      publicKeyObject = new PublicKey(solanaPublicKey);
+    } catch (err) {
+      alert("Invalid Solana address. Please try again.");
+      return;
+    }
     // 1e9 lamports = 10^9 lamports = 1 SOL
-    let txhash = await connection.requestAirdrop(PublicKeyObject, 1e9);
+    let txhash = await connection.requestAirdrop(publicKeyObject, 1e9);
     setTxHash(txhash);
   };
 
