@@ -5,25 +5,27 @@
     margin: 0 auto;
     text-align: center;
     display: flex;
-    
-}
-* {
+  }
+  
+  /* Set the background color for all elements except the Footer */
+  *:not(.footer *) {
     background-color: #171717;
-}
-label {
+  }
+  
+  label {
     color: white;
     font-family: "Poppins", sans-serif;
-}
+  }
   
-input[type="text"] {
+  input[type="text"] {
     padding: 10px;
     margin: 10px;
     border: none;
     border-radius: 5px;
     width: 80%;
-}
-button {
-    background-color: #e3d35a;
+  }
+  
+  button {
     color: #171717;
     padding: 10px 20px;
     border: none;
@@ -31,5 +33,17 @@ button {
     cursor: pointer;
     margin: 10px;
     font-size: 1rem;
-}
+    background-color: #e3d35a;
+  }
+  
+  .container button {
+    background-color: #e3d35a;
+  }
+  
+  button:hover {
+    background-color: red;
+    color: white;
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+  }
   

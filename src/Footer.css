@@ -1,0 +1,42 @@
+.footer {
+    background-color: #72d2c2;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .icon-yt,
+  .icon-wesbite,
+  .icon-git,
+  .icon-ldin {
+    color: black;
+    font-size: 24px;
+    margin: 0px 35px;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-yt:hover {
+    color: red;
+    transform: scale(1.2);
+  }
+  
+  .icon-git:hover {
+    color: rgb(40, 169, 94);
+    transform: scale(1.2);
+  }
+  
+  .icon-ldin:hover {
+    color: rgb(43, 55, 183);
+    transform: scale(1.2);
+  }
+  .icon-wesbite:hover {
+    color: rgb(225, 225, 20);
+    transform: scale(1.2);
+  }
+  
