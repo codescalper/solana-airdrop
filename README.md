@@ -1,70 +1,62 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Title -->
+<h1 align="center">Solana Airdrop</h1>
 
-## Available Scripts
+<!-- Description -->
+<p align="center">This repository contains a simple React application that allows you to airdrop SOL to a given Solana address on Devnet.</p>
 
-In the project directory, you can run:
+ <h2>Tech Stack</h2>
+  <ul>
+    <li>React</li>
+    <li>@solana/web3.js</li>
+  </ul>
 
-### `npm start`
+<!-- Prerequisites -->
+<h2>Prerequisites</h2>
+<ul>
+  <li><a href="https://nodejs.org/en/">Node.js</a></li>
+  <li><a href="https://www.npmjs.com/">npm</a></li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- Installation -->
+<h2>Installation</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p>1. Clone the repository:</p>
 
-### `npm test`
+<pre><code>git clone https://github.com/codescalper/solana-airdrop.git</code></pre>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>2. Install dependencies:</p>
 
-### `npm run build`
+<pre><code>cd solana-airdrop
+npm install</code></pre>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>3. Run the application:</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<pre><code>npm start</code></pre>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>4. Navigate to <a href="http://localhost:3000">http://localhost:3000</a> in your browser to use the airdrop tool.</p>
 
-### `npm run eject`
+<!-- Usage -->
+<h2>Usage</h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>To use the airdrop tool, enter a valid Solana address into the input field and click the "Airdrop" button. If the address is valid, the application will send 1 SOL to the address on Devnet and display the transaction hash.</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p>Note: This tool does not give real $SOL or Solana tokens. It is only for testing purposes on Devnet.</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- Code -->
+<h2>Code</h2>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p>The main component of this React application is the <code>SolAirdrop</code> component, which is located in <code>src/SolAirdrop.js</code>:</p>
 
-## Learn More
+ <h2>Issues</h2>
+  <p>If you have found a bug or have a feature request, please <a href="https://github.com/codescalper/solana-airdrop/issues">open an issue</a> on Github.</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  <h2>Contributing</h2>
+  <p>Contributions are always welcome! If you want to contribute to this project, please follow these steps:</p>
+  <ol>
+    <li>Fork the repository</li>
+    <li>Make your changes</li>
+    <li>Test your changes</li>
+    <li>Submit a pull request</li>
+  </ol>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
