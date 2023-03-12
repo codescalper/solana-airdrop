@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Connection, PublicKey } from "@solana/web3.js";
+import "./style.css";
 
 function SolAirdrop() {
   const [solanaPublicKey, setSolanaPublicKey] = useState("");
@@ -15,8 +16,11 @@ function SolAirdrop() {
     setTxHash(txhash);
   };
 
+  // Move console.log statement outside of JSX block
+  console.log(`Transaction Hash: ${txHash}`);
+
   return (
-    <div>
+    <div className="container">
       <form onSubmit={onSubmit}>
         <label htmlFor="search">Enter Sol Token</label>
         <input
@@ -29,7 +33,6 @@ function SolAirdrop() {
         />
         <button type="submit">Airdrop</button>
       </form>
-      {txHash && <p>Transaction Hash: {txHash}</p>}
     </div>
   );
 }

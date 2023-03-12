@@ -1,0 +1,35 @@
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    
+}
+* {
+    background-color: #171717;
+}
+label {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+  
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+button {
+    background-color: #e3d35a;
+    color: #171717;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+}
+  
