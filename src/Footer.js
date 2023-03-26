@@ -17,7 +17,7 @@ function Footer() {
       >
         <FaLinkedin className="icon-ldin" />
       </a>
-      <a href="" target="_blank">
+      <a href="https://mayankonweb.pages.dev/" target="_blank">
         <FaGlobe className="icon-wesbite" />
       </a>
     </footer>
